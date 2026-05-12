@@ -1,0 +1,19 @@
+{
+    "parsers": {
+        "vcs_uvm": {
+            "project_name": "(?:#\\s*)?PROJECT_NAME=(.*)",
+            "regression_name": "(?:#\\s*)?REGRESSION_NAME=(.*)",
+            "test_name": "(?:#\\s*)?TEST_NAME=(.*)",
+            "seed": "SVSEED=([0-9]+)",
+            "pass": "UVM_INFO.*TEST PASSED",
+            "fail": "UVM_ERROR.*reporter \\[(.*?)\\] (.*)",
+            "fatal": "UVM_FATAL.*reporter \\[(.*?)\\] (.*)"
+        },
+        "questa": {
+            "test_name": "^# TEST_NAME: (.*)",
+            "seed": "-sv_seed ([0-9]+)",
+            "pass": "# \\*\\* Note: \\$finish",
+            "fail": "# \\*\\* Error: \\(vsim-[0-9]+\\) (.*)"
+        }
+    }
+}
