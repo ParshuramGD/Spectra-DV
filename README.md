@@ -23,7 +23,7 @@ Robust Database Transactions: Uses Django's atomic transaction gateways to ensur
 
 ## Demo Video
 
-<video src="assets/Spectra-DV.mp4" controls width="100%"</video>
+<video src="assets/Spectra-DV.mp4" controls width="100%" poster="assets/images/01_dashboard_overview.png"></video>
 
 ---
 All visual assets are stored in the assets/images.
