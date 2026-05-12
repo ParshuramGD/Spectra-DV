@@ -21,8 +21,17 @@ Robust Database Transactions: Uses Django's atomic transaction gateways to ensur
 
 ## Screenshots and Video Demo
 
-## Demo Video
-<video src="assets/Spectra-DV.mp4" controls width="100%" poster="assets/01_dashboard_overview.png"></video>
+## 🎥 Spectra-DV Demo
+
+<p align="center">
+  <a href="https://youtu.be/SuKwcrx3BGI">
+    <img src="assets/images/01_dashboard_overview.png" width="900">
+  </a>
+</p>
+
+<p align="center">
+  Click the image above to watch the full demo video
+</p>
 
 1. Centralized Engineering Dashboard
 The landing page consolidates high-level project health at a glance, tracking active runs and calculating cumulative pass rates across different hardware blocks.
