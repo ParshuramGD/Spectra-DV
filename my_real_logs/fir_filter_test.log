@@ -1,0 +1,89 @@
+ Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
+# do Fir_filter_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/19.1/projects/Filter {C:/intelFPGA_lite/19.1/projects/Filter/fir_filter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:33:39 on May 11,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/19.1/projects/Filter" C:/intelFPGA_lite/19.1/projects/Filter/fir_filter.sv 
+# -- Compiling module fir_filter
+# 
+# Top level modules:
+# 	fir_filter
+# End time: 14:33:39 on May 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/19.1/projects/Filter {C:/intelFPGA_lite/19.1/projects/Filter/fir_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:33:39 on May 11,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/19.1/projects/Filter" C:/intelFPGA_lite/19.1/projects/Filter/fir_tb.sv 
+# -- Compiling module fir_tb
+# 
+# Top level modules:
+# 	fir_tb
+# End time: 14:33:39 on May 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  fir_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" fir_tb 
+# Start time: 14:33:40 on May 11,2026
+# Loading sv_std.std
+# Loading work.fir_tb
+# Loading work.fir_filter
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# PROJECT_NAME=Digital_FIR_Filter
+# REGRESSION_NAME=FIR_Overflow_Regression
+# TEST_NAME=test_fir_saturation
+# SVSEED=99214
+# UVM_INFO @ 5000 : reporter [FIR_MONITOR] cycle=1 input=0 output=x
+# UVM_INFO @ 15000 : reporter [FIR_MONITOR] cycle=2 input=0 output=0
+# UVM_INFO @ 25000 : reporter [FIR_MONITOR] cycle=3 input=0 output=0
+# UVM_INFO @ 35000 : reporter [FIR_MONITOR] cycle=4 input=30000 output=0
+# UVM_INFO @ 45000 : reporter [FIR_MONITOR] cycle=5 input=30000 output=32767
+# UVM_INFO @ 55000 : reporter [FIR_MONITOR] cycle=6 input=30000 output=32767
+# UVM_INFO @ 65000 : reporter [FIR_MONITOR] cycle=7 input=30000 output=32767
+# UVM_INFO @ 75000 : reporter [FIR_MONITOR] cycle=8 input=30000 output=32767
+# UVM_INFO @ 85000 : reporter [FIR_MONITOR] cycle=9 input=30000 output=32767
+# UVM_INFO @ 95000 : reporter [FIR_MONITOR] cycle=10 input=30000 output=32767
+# UVM_INFO @ 105000 : reporter [FIR_MONITOR] cycle=11 input=30000 output=32767
+# UVM_INFO @ 115000 : reporter [FIR_MONITOR] cycle=12 input=30000 output=32767
+# UVM_INFO @ 125000 : reporter [FIR_MONITOR] cycle=13 input=30000 output=32767
+# UVM_INFO @ 135000 : reporter [FIR_MONITOR] cycle=14 input=30000 output=32767
+# UVM_INFO @ 145000 : reporter [FIR_MONITOR] cycle=15 input=-30000 output=32767
+# UVM_INFO @ 155000 : reporter [FIR_MONITOR] cycle=16 input=-30000 output=32767
+# UVM_INFO @ 165000 : reporter [FIR_MONITOR] cycle=17 input=-30000 output=-32768
+# UVM_INFO @ 175000 : reporter [FIR_MONITOR] cycle=18 input=-30000 output=-32768
+# UVM_INFO @ 185000 : reporter [FIR_MONITOR] cycle=19 input=-30000 output=-32768
+# UVM_INFO @ 195000 : reporter [FIR_MONITOR] cycle=20 input=-30000 output=-32768
+# UVM_INFO @ 205000 : reporter [FIR_MONITOR] cycle=21 input=-30000 output=-32768
+# UVM_INFO @ 215000 : reporter [FIR_MONITOR] cycle=22 input=-30000 output=-32768
+# UVM_INFO @ 225000 : reporter [FIR_MONITOR] cycle=23 input=-30000 output=-32768
+# UVM_INFO @ 235000 : reporter [FIR_MONITOR] cycle=24 input=-30000 output=-32768
+# UVM_INFO @ 245000 : reporter [FIR_MONITOR] cycle=25 input=-30000 output=-32768
+# UVM_INFO @ 255000 : reporter [FIR_MONITOR] cycle=26 input=-30000 output=-32768
+# UVM_INFO @ 265000 : reporter [FIR_MONITOR] cycle=27 input=-30000 output=-32768
+# UVM_INFO @ 275000 : reporter [FIR_MONITOR] cycle=28 input=-30000 output=-32768
+# UVM_INFO @ 285000 : reporter [FIR_MONITOR] cycle=29 input=-30000 output=-32768
+# UVM_INFO @ 295000 : reporter [FIR_MONITOR] cycle=30 input=-30000 output=-32768
+# UVM_INFO @ 305000 : reporter [FIR_MONITOR] cycle=31 input=-30000 output=-32768
+# UVM_INFO @ 315000 : reporter [FIR_MONITOR] cycle=32 input=-30000 output=-32768
+# UVM_INFO @ 325000 : reporter [TEST_DONE] TEST PASSED
+# ** Note: $finish    : C:/intelFPGA_lite/19.1/projects/Filter/fir_tb.sv(94)
+#    Time: 325 ns  Iteration: 0  Instance: /fir_tb
+# 1
+# Break in Module fir_tb at C:/intelFPGA_lite/19.1/projects/Filter/fir_tb.sv line 94
+

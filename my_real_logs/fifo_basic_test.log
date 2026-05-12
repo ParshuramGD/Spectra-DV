@@ -1,0 +1,87 @@
+# Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
+# do fifo_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/19.1/projects {C:/intelFPGA_lite/19.1/projects/fifo.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:06 on May 10,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/19.1/projects" C:/intelFPGA_lite/19.1/projects/fifo.sv 
+# -- Compiling module fifo
+# 
+# Top level modules:
+# 	fifo
+# End time: 18:42:06 on May 10,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/19.1/projects {C:/intelFPGA_lite/19.1/projects/fifo_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:06 on May 10,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/19.1/projects" C:/intelFPGA_lite/19.1/projects/fifo_tb.sv 
+# -- Compiling module fifo_tb
+# 
+# Top level modules:
+# 	fifo_tb
+# End time: 18:42:06 on May 10,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  fifo_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" fifo_tb 
+# Start time: 18:42:06 on May 10,2026
+# Loading sv_std.std
+# Loading work.fifo_tb
+# Loading work.fifo
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# PROJECT_NAME=Synchronous_FIFO
+# REGRESSION_NAME=FIFO_Sanity_Regression
+# TEST_NAME=test_fifo_basic
+# SVSEED=99214
+# UVM_INFO @ 5000 : reporter [FIFO_MONITOR] wr_en=0 rd_en=0 full=0 empty=1 wr_ptr=0 rd_ptr=0
+# UVM_INFO @ 15000 : reporter [FIFO_MONITOR] wr_en=0 rd_en=0 full=0 empty=1 wr_ptr=0 rd_ptr=0
+# UVM_INFO @ 25000 : reporter [FIFO_MONITOR] wr_en=0 rd_en=0 full=0 empty=1 wr_ptr=0 rd_ptr=0
+# UVM_INFO @ 35000 : reporter [FIFO_MONITOR] wr_en=1 rd_en=0 full=0 empty=1 wr_ptr=0 rd_ptr=0
+# UVM_INFO @ 45000 : reporter [FIFO_MONITOR] wr_en=1 rd_en=0 full=0 empty=0 wr_ptr=1 rd_ptr=0
+# UVM_INFO @ 55000 : reporter [FIFO_MONITOR] wr_en=1 rd_en=0 full=0 empty=0 wr_ptr=2 rd_ptr=0
+# UVM_INFO @ 65000 : reporter [FIFO_MONITOR] wr_en=1 rd_en=0 full=0 empty=0 wr_ptr=3 rd_ptr=0
+# UVM_INFO @ 75000 : reporter [FIFO_MONITOR] wr_en=1 rd_en=0 full=0 empty=0 wr_ptr=4 rd_ptr=0
+# UVM_INFO @ 85000 : reporter [FIFO_MONITOR] wr_en=1 rd_en=0 full=0 empty=0 wr_ptr=5 rd_ptr=0
+# UVM_INFO @ 95000 : reporter [FIFO_MONITOR] wr_en=1 rd_en=0 full=0 empty=0 wr_ptr=6 rd_ptr=0
+# UVM_INFO @ 105000 : reporter [FIFO_MONITOR] wr_en=1 rd_en=0 full=0 empty=0 wr_ptr=7 rd_ptr=0
+# UVM_INFO @ 115000 : reporter [FIFO_MONITOR] wr_en=1 rd_en=0 full=1 empty=0 wr_ptr=0 rd_ptr=0
+# UVM_ERROR @ 115000 : reporter [FIFO_OVERFLOW] Write attempted while FIFO full
+# UVM_INFO @ 125000 : reporter [FIFO_MONITOR] wr_en=1 rd_en=0 full=1 empty=0 wr_ptr=0 rd_ptr=0
+# UVM_INFO @ 135000 : reporter [FIFO_MONITOR] wr_en=0 rd_en=0 full=1 empty=0 wr_ptr=0 rd_ptr=0
+# UVM_INFO @ 145000 : reporter [FIFO_MONITOR] wr_en=0 rd_en=1 full=1 empty=0 wr_ptr=0 rd_ptr=0
+# UVM_INFO @ 155000 : reporter [FIFO_MONITOR] wr_en=0 rd_en=1 full=0 empty=0 wr_ptr=0 rd_ptr=1
+# UVM_INFO @ 165000 : reporter [FIFO_MONITOR] wr_en=0 rd_en=1 full=0 empty=0 wr_ptr=0 rd_ptr=2
+# UVM_INFO @ 175000 : reporter [FIFO_MONITOR] wr_en=0 rd_en=1 full=0 empty=0 wr_ptr=0 rd_ptr=3
+# UVM_INFO @ 185000 : reporter [FIFO_MONITOR] wr_en=0 rd_en=1 full=0 empty=0 wr_ptr=0 rd_ptr=4
+# UVM_INFO @ 195000 : reporter [FIFO_MONITOR] wr_en=0 rd_en=1 full=0 empty=0 wr_ptr=0 rd_ptr=5
+# UVM_INFO @ 205000 : reporter [FIFO_MONITOR] wr_en=0 rd_en=1 full=0 empty=0 wr_ptr=0 rd_ptr=6
+# UVM_INFO @ 215000 : reporter [FIFO_MONITOR] wr_en=0 rd_en=1 full=0 empty=0 wr_ptr=0 rd_ptr=7
+# UVM_INFO @ 225000 : reporter [FIFO_MONITOR] wr_en=0 rd_en=1 full=0 empty=1 wr_ptr=0 rd_ptr=0
+# UVM_ERROR @ 225000 : reporter [FIFO_DATA_CORRUPTION] Read attempted while FIFO empty
+# UVM_INFO @ 235000 : reporter [FIFO_MONITOR] wr_en=0 rd_en=1 full=0 empty=1 wr_ptr=0 rd_ptr=0
+# UVM_INFO @ 245000 : reporter [FIFO_MONITOR] wr_en=0 rd_en=0 full=0 empty=1 wr_ptr=0 rd_ptr=0
+# UVM_INFO @ 255000 : reporter [FIFO_MONITOR] wr_en=0 rd_en=0 full=0 empty=1 wr_ptr=0 rd_ptr=0
+# UVM_INFO @ 265000 : reporter [FIFO_MONITOR] wr_en=0 rd_en=0 full=0 empty=1 wr_ptr=0 rd_ptr=0
+# UVM_INFO @ 275000 : reporter [FIFO_MONITOR] wr_en=0 rd_en=0 full=0 empty=1 wr_ptr=0 rd_ptr=0
+# UVM_INFO @ 285000 : reporter [TEST_DONE] TEST PASSED
+# ** Note: $finish    : C:/intelFPGA_lite/19.1/projects/fifo_tb.sv(118)
+#    Time: 285 ns  Iteration: 0  Instance: /fifo_tb
+# 1
+# Break in Module fifo_tb at C:/intelFPGA_lite/19.1/projects/fifo_tb.sv line 118
+

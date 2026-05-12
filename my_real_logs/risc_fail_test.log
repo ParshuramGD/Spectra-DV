@@ -1,0 +1,75 @@
+# Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
+# do risc32_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/19.1/risc32 {C:/intelFPGA_lite/19.1/risc32/pipe_MIPS32.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:00:39 on May 10,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/19.1/risc32" C:/intelFPGA_lite/19.1/risc32/pipe_MIPS32.sv 
+# -- Compiling module pipe_MIPS32
+# 
+# Top level modules:
+# 	pipe_MIPS32
+# End time: 23:00:39 on May 10,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/19.1/risc32 {C:/intelFPGA_lite/19.1/risc32/pipe_MIPS32_tb_fail.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:00:39 on May 10,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/19.1/risc32" C:/intelFPGA_lite/19.1/risc32/pipe_MIPS32_tb_fail.sv 
+# -- Compiling module pipe_MIPS32_tb_fail
+# 
+# Top level modules:
+# 	pipe_MIPS32_tb_fail
+# End time: 23:00:39 on May 10,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  pipe_MIPS32_tb_fail
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" pipe_MIPS32_tb_fail 
+# Start time: 23:00:39 on May 10,2026
+# Loading sv_std.std
+# Loading work.pipe_MIPS32_tb_fail
+# Loading work.pipe_MIPS32
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# PROJECT_NAME=MIPS32_PIPELINE
+# REGRESSION_NAME=PIPELINE_REGRESSION
+# TEST_NAME=test_pipeline_fail
+# SVSEED=4040
+# UVM_INFO @ 10000 : reporter [PIPE_MONITOR] PC=0 R1=10 R2=20 R3=x
+# UVM_INFO @ 30000 : reporter [PIPE_MONITOR] PC=1 R1=10 R2=20 R3=x
+# UVM_INFO @ 50000 : reporter [PIPE_MONITOR] PC=2 R1=10 R2=20 R3=x
+# UVM_INFO @ 70000 : reporter [PIPE_MONITOR] PC=3 R1=10 R2=20 R3=x
+# UVM_INFO @ 90000 : reporter [PIPE_MONITOR] PC=4 R1=10 R2=20 R3=x
+# UVM_INFO @ 110000 : reporter [PIPE_MONITOR] PC=4 R1=10 R2=20 R3=30
+# UVM_INFO @ 130000 : reporter [PIPE_MONITOR] PC=4 R1=10 R2=20 R3=30
+# UVM_INFO @ 150000 : reporter [PIPE_MONITOR] PC=4 R1=10 R2=20 R3=30
+# UVM_INFO @ 170000 : reporter [PIPE_MONITOR] PC=4 R1=10 R2=20 R3=30
+# UVM_INFO @ 190000 : reporter [PIPE_MONITOR] PC=4 R1=10 R2=20 R3=30
+# UVM_ERROR @ 200000 : reporter [ADD_FAIL] Expected 100 Got 30
+# --------------------------------
+# REGRESSION SUMMARY
+# TOTAL PASS = 0
+# TOTAL FAIL = 1
+# --------------------------------
+# UVM_ERROR @ 200000 : reporter [TEST_DONE] TEST FAILED
+# UVM_INFO @ 210000 : reporter [PIPE_MONITOR] PC=4 R1=10 R2=20 R3=30
+# ** Note: $finish    : C:/intelFPGA_lite/19.1/risc32/pipe_MIPS32_tb_fail.sv(107)
+#    Time: 220 ns  Iteration: 0  Instance: /pipe_MIPS32_tb_fail
+# 1
+# Break in Module pipe_MIPS32_tb_fail at C:/intelFPGA_lite/19.1/risc32/pipe_MIPS32_tb_fail.sv line 107
+
+

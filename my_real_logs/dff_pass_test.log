@@ -1,0 +1,62 @@
+# Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
+# do Dflip_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/19.1/projects/Dflop/db {C:/intelFPGA_lite/19.1/projects/Dflop/db/Dflipflop.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:22:32 on May 10,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/19.1/projects/Dflop/db" C:/intelFPGA_lite/19.1/projects/Dflop/db/Dflipflop.sv 
+# -- Compiling module Dflipflop
+# 
+# Top level modules:
+# 	Dflipflop
+# End time: 20:22:32 on May 10,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/intelFPGA_lite/19.1/projects/Dflop/db {C:/intelFPGA_lite/19.1/projects/Dflop/db/dflipflop_tb_pass.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:22:32 on May 10,2026
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/intelFPGA_lite/19.1/projects/Dflop/db" C:/intelFPGA_lite/19.1/projects/Dflop/db/dflipflop_tb_pass.sv 
+# -- Compiling module dflipflop_tb_pass
+# 
+# Top level modules:
+# 	dflipflop_tb_pass
+# End time: 20:22:32 on May 10,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  dflipflop_tb_pass
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" dflipflop_tb_pass 
+# Start time: 20:22:32 on May 10,2026
+# Loading sv_std.std
+# Loading work.dflipflop_tb_pass
+# Loading work.Dflipflop
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# PROJECT_NAME=DFF_Project
+# REGRESSION_NAME=DFF_Sanity_Regression
+# TEST_NAME=test_dff_pass
+# SVSEED=12345
+# UVM_INFO @ 5000 : reporter [DFF_MONITOR] rst=1 d=0 q=0
+# UVM_INFO @ 15000 : reporter [DFF_MONITOR] rst=0 d=1 q=0
+# UVM_INFO @ 20000 : reporter [DFF_PASS] q updated correctly
+# UVM_INFO @ 25000 : reporter [DFF_MONITOR] rst=0 d=1 q=1
+# UVM_INFO @ 30000 : reporter [TEST_DONE] TEST PASSED
+# ** Note: $finish    : C:/intelFPGA_lite/19.1/projects/Dflop/db/dflipflop_tb_pass.sv(51)
+#    Time: 30 ns  Iteration: 0  Instance: /dflipflop_tb_pass
+# 1
+# Break in Module dflipflop_tb_pass at C:/intelFPGA_lite/19.1/projects/Dflop/db/dflipflop_tb_pass.sv line 51
+
+
