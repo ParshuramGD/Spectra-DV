@@ -1,4 +1,4 @@
-## Spectra-DV
+# Spectra-DV
 A local, database-driven Simulation Regression Tracking and Triage Dashboard designed for Design Verification (DV) and CAD automation workflows.
 
 Why Spectra-DV Exists
@@ -64,21 +64,21 @@ Digital FIR Filter: Digital Signal Processing (DSP) datapath block. Tested using
 Demo & Seed Data
 Ensure your virtual environment is active, then run:
 
-## Refer the Technical Documentation
+# Refer the Technical Documentation
 
 <a href="Spectra_DV_Technical_Report.pdf">Technical Documentation</a>
 
 Bash
-# 1. Run migrations and database setup
+## 1. Run migrations and database setup
 python manage.py migrate
 
-# 2. Ingest authentic ModelSim test logs using the local parser
+## 2. Ingest authentic ModelSim test logs using the local parser
 python ci_tools/import_test.py my_real_logs
 
-# 3. Create a read-only demo user
+## 3. Create a read-only demo user
 python manage.py create_demo_user --username demo --password demo
 
-# 4. Start the Django server
+## 4. Start the Django server
 python manage.py runserver 0.0.0.0:8000
 Open http://127.0.0.1:8000/ in your browser and sign in with credentials: demo / demo.
 or
