@@ -1,4 +1,4 @@
-Spectra-DV
+## Spectra-DV
 A local, database-driven Simulation Regression Tracking and Triage Dashboard designed for Design Verification (DV) and CAD automation workflows.
 
 Why Spectra-DV Exists
