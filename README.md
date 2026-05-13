@@ -64,6 +64,10 @@ Digital FIR Filter: Digital Signal Processing (DSP) datapath block. Tested using
 Demo & Seed Data
 Ensure your virtual environment is active, then run:
 
+## Refer the Technical Documentation
+
+<a href="Spectra_DV_Technical_Report.pdf">Technical Documentation</a>
+
 Bash
 # 1. Run migrations and database setup
 python manage.py migrate
