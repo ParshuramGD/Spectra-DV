@@ -33,6 +33,22 @@ Robust Database Transactions: Uses Django's atomic transaction gateways to ensur
   Click the image above to watch the full demo video
 </p>
 
+
+### Dashboard Overview
+![Dashboard Overview](assets/images/01_dashboard_overview.png)
+
+### Regression Trends
+![Regression Trends](assets/images/02_regression_trends.png)
+
+### Regression Runs List
+![Regression Runs List](assets/images/03_regression_runs_list.png)
+
+### Failure Triage View
+![Failure Triage View](assets/images/04_test_failure_triage_view.png)
+
+### Results Database Ledger
+![Results Database Ledger](assets/images/05_results_database_ledger.png)
+
 1. Centralized Engineering Dashboard
 The landing page consolidates high-level project health at a glance, tracking active runs and calculating cumulative pass rates across different hardware blocks.
 
