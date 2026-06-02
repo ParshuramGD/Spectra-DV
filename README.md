@@ -33,6 +33,9 @@ Robust Database Transactions: Uses Django's atomic transaction gateways to ensur
   Click the image above to watch the full demo video
 </p>
 
+### System Flow
+![System Flow](assets/images/Picture1.png)
+
 
 ### Dashboard Overview
 ![Dashboard Overview](assets/images/01_dashboard_overview.png)
